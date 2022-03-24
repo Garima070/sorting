@@ -12,11 +12,14 @@ public class InsertionSort {
                 pos=pos-1;
             }
             arr[pos+1]=temp;
+            print(arr,i);
+            System.out.println();
         }
     }
-    public static void print(int arr[])
+    public static void print(int arr[],int k)
     {
         int n=arr.length;
+        System.out.print("pass "+k+" ->");
         for (int i = 0; i < n; i++) {
 
             System.out.print(arr[i]+" ");
@@ -26,6 +29,6 @@ public class InsertionSort {
         int arr[]={56,45,32,78,52,1};
         InsertionSort obj=new InsertionSort();
         obj.sort(arr);
-        obj.print(arr);
+       // obj.print(arr);
     }
 }
